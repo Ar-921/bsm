@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping Cart - BSM Backlinks</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon_main-01.svg" />
+    <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/marketplace.css" />
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+
+<body class="bg-light-subtle d-flex flex-column min-vh-100">
+
+    <!-- FINAL UNIVERSAL HEADER -->
+    <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+    <div class="container">
+        <div class="header-wrapper d-flex align-items-center justify-content-between">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="index.html" class="logo-white">
+            <img src="../assets/images/logos/6-01.svg" alt="logo" class="img-fluid">
+            </a>
+            <a href="index.html" class="logo-dark">
+            <img src="../assets/images/logos/6-01.svg" alt="logo" class="img-fluid">
+            </a>
+        </div>
+
+        <div class="d-flex align-items-center gap-4">
+
+            <!-- CART ICON -->
+            <a href="cart.html" class="position-relative text-dark text-decoration-none">
+            <iconify-icon icon="lucide:shopping-bag" class="fs-6"></iconify-icon>
+            <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count"
+                style="font-size:0.65rem;">
+                0
+            </span>
+            </a>
+
+            <!-- MENU BUTTON -->
+            <div class="btn-group">
+            <button
+                class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+                type="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="true"
+                aria-expanded="false">
+
+                <iconify-icon icon="solar:hamburger-menu-line-duotone"
+                class="menu-icon fs-8 text-dark"></iconify-icon>
+            </button>
+
+            <!-- DROPDOWN MENU -->
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown-menu dropdown-menu-end premium-menu p-0 overflow-hidden">
+
+                <div class="premium-menu-inner">
+
+                <!-- HEADER -->
+                <div class="menu-top d-flex justify-content-between align-items-center">
+                    <h6 class="mb-0 fw-bold">Navigation</h6>
+                    <button type="button" class="btn-close opacity-75"></button>
+                </div>
+
+
+                <!-- ======================
+                    PRIMARY ACTIONS
+                ======================= -->
+                <div class="menu-primary">
+
+                    <!-- MARKETPLACE (MAIN CTA) -->
+                    <a href="websites.html" class="menu-hero">
+                    <div class="d-flex align-items-center gap-3">
+                        <iconify-icon icon="lucide:globe" class="fs-4"></iconify-icon>
+                        <div>
+                        <div class="fw-bold">Marketplace</div>
+                        <small>Browse backlink websites</small>
+                        </div>
+                    </div>
+                    <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+                    </a>
+
+                    <!-- CART -->
+                    <a href="cart.html" class="menu-cart">
+                    <iconify-icon icon="lucide:shopping-bag"></iconify-icon>
+                    <span>Your Cart</span>
+                    </a>
+
+                </div>
+
+
+                <!-- EXPLORE -->
+                <div class="menu-section">
+                    <p class="menu-label">Explore</p>
+
+                    <a href="index.html" class="menu-link">
+                    <iconify-icon icon="lucide:home"></iconify-icon> Home
+                    </a>
+
+                    <a href="services.html" class="menu-link">
+                    <iconify-icon icon="lucide:briefcase"></iconify-icon> Services
+                    </a>
+
+                    <a href="projects.html" class="menu-link">
+                    <iconify-icon icon="lucide:folder-kanban"></iconify-icon> Projects
+                    </a>
+
+                    <!-- Hidden Future Page -->
+                    <!--
+                    <a href="blog.html" class="menu-link">
+                    <iconify-icon icon="lucide:pen-square"></iconify-icon> Blog
+                    </a>
+                    -->
+                </div>
+
+
+                <!-- COMPANY -->
+                <div class="menu-section">
+                    <p class="menu-label">Company</p>
+
+                    <a href="about-us.html" class="menu-link">
+                    <iconify-icon icon="lucide:info"></iconify-icon> About
+                    </a>
+
+                    <a href="contact.html" class="menu-link">
+                    <iconify-icon icon="lucide:mail"></iconify-icon> Contact
+                    </a>
+
+                    <!-- Hidden Future Page -->
+                    <!--
+                    <a href="docs.html" class="menu-link">
+                    <iconify-icon icon="lucide:file-text"></iconify-icon> Docs
+                    </a>
+                    -->
+                </div>
+
+
+                <!-- ACCOUNT CTA -->
+                <div class="menu-auth">
+                    <a href="sign-in.html" class="btn btn-light w-100">Sign In</a>
+                    <a href="sign-up.html" class="btn btn-dark w-100">Create Account</a>
+                </div>
+
+
+                <!-- FOOTER -->
+                <div class="menu-footer">
+                    <small>+1-212-456-7890</small>
+                    <strong>contact@bsmbacklinks.com</strong>
+                </div>
+
+                </div>
+            </ul>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    </header>
+
+    <!-- Main Cart Section -->
+    <main class="flex-grow-1" style="padding-top: 200px; padding-bottom: 60px;">
+        <div class="container">
+            <h2 class="fw-bolder mb-4 text-dark display-6">Your Cart</h2>
+
+            <div class="row align-items-start gy-4">
+
+                <!-- Cart Items -->
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table align-middle mb-0">
+                                    <thead style="background-color: #f8f9fa;">
+                                        <tr>
+                                            <th
+                                                class="py-3 ps-4 text-secondary fw-bold text-uppercase fs-8 border-bottom-0">
+                                                Product</th>
+                                            <th
+                                                class="py-3 text-secondary fw-bold text-uppercase fs-8 border-bottom-0 text-center">
+                                                Price</th>
+                                            <th
+                                                class="py-3 pe-4 text-secondary fw-bold text-uppercase fs-8 border-bottom-0 text-end">
+                                                Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cartItemsBody">
+                                        <!-- Items go here -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm rounded-4" style="top: 100px;">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-4">Order Summary</h4>
+
+                            <div class="d-flex justify-content-between mb-3 text-secondary">
+                                <span>Subtotal</span>
+                                <span class="fw-medium text-dark" id="cartSubtotal">$0.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-4 pb-3 border-bottom text-secondary">
+                                <span>Platform Fee (2%)</span>
+                                <span class="fw-medium text-dark" id="cartFee">$0.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-4">
+                                <span class="fw-bold fs-5 text-dark">Total</span>
+                                <span class="fw-bold fs-5 text-primary" id="cartTotal">$0.00</span>
+                            </div>
+
+                            <a href="checkout.html" id="checkoutBtn"
+                                class="btn btn-primary w-100 py-3 rounded-pill fw-bold fs-6 shadow-sm disabled">
+                                Proceed to Checkout <iconify-icon icon="lucide:arrow-right"
+                                    class="ms-2 align-middle"></iconify-icon>
+                            </a>
+
+                            <div class="text-center mt-3">
+                                <span
+                                    class="fs-8 text-secondary d-flex align-items-center justify-content-center gap-1">
+                                    <iconify-icon icon="lucide:shield-check" class="text-success"></iconify-icon> Secure
+                                    Encrypted Checkout
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-dark py-4 text-center mt-auto">
+        <p class="text-white text-opacity-50 mb-0 fs-8">© 2026 BSM Backlinks. All rights reserved.</p>
+    </footer>
+
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/marketplace.js"></script>
+
+    <script>
+        function renderCartPage() {
+            const tbody = document.getElementById("cartItemsBody");
+            const subtotalEl = document.getElementById("cartSubtotal");
+            const feeEl = document.getElementById("cartFee");
+            const totalEl = document.getElementById("cartTotal");
+            const checkoutBtn = document.getElementById("checkoutBtn");
+
+            if (!tbody) return;
+
+            tbody.innerHTML = "";
+
+            let subtotal = 0;
+
+            if (cart.length === 0) {
+                tbody.innerHTML = `
+                <tr>
+                    <td colspan="3" class="text-center py-5">
+                        <div class="text-secondary mb-3">
+                            <iconify-icon icon="lucide:shopping-cart" class="display-1 opacity-25"></iconify-icon>
+                        </div>
+                        <h5>Your cart is empty</h5>
+                        <p class="text-muted mb-4">Looks like you haven't added any domains yet.</p>
+                        <a href="websites.html" class="btn btn-primary rounded-pill px-4">Browse Marketplace</a>
+                    </td>
+                </tr>
+            `;
+                checkoutBtn.classList.add("disabled");
+            } else {
+                checkoutBtn.classList.remove("disabled");
+
+                cart.forEach(item => {
+                    subtotal += parseFloat(item.price);
+                    const row = `
+                    <tr>
+                        <td class="ps-4 py-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-light rounded-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                    <iconify-icon icon="lucide:globe" class="fs-4 text-primary"></iconify-icon>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1 text-dark fw-bold">${item.domain}</h6>
+                                    <span class="badge bg-secondary-subtle text-secondary fs-8 rounded-pill px-2">Guest Post Placement</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center py-4 fw-semibold text-dark">
+                            $${parseFloat(item.price).toFixed(2)}
+                        </td>
+                        <td class="pe-4 py-4 text-end">
+                            <button class="btn btn-sm btn-light text-danger rounded-circle p-2 hover-bg-danger hover-text-white transition-all shadow-sm" onclick="removeFromCart('${item.id}')" title="Remove Item">
+                                <iconify-icon icon="lucide:trash-2" class="d-block"></iconify-icon>
+                            </button>
+                        </td>
+                    </tr>
+                `;
+                    tbody.insertAdjacentHTML("beforeend", row);
+                });
+            }
+
+            const fee = subtotal * 0.02;
+            const total = subtotal + fee;
+
+            subtotalEl.innerText = `$${subtotal.toFixed(2)}`;
+            feeEl.innerText = `$${fee.toFixed(2)}`;
+            totalEl.innerText = `$${total.toFixed(2)}`;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            // we already call updateCartCount in marketplace.js which makes sure cart var is loaded
+            renderCartPage();
+        });
+    </script>
+</body>
+
+</html>

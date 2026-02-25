@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marketplace</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon_main-01.svg" />
+  <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/marketplace.css" />
+</head>
+
+<body>
+
+  <!-- FINAL UNIVERSAL HEADER -->
+  <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+    <div class="container">
+      <div class="header-wrapper d-flex align-items-center justify-content-between">
+
+        <!-- LOGO -->
+        <div class="logo">
+          <a href="index.html" class="logo-white">
+            <img src="../assets/images/logos/6-01.svg" alt="logo" class="img-fluid">
+          </a>
+          <a href="index.html" class="logo-dark">
+            <img src="../assets/images/logos/6-01.svg" alt="logo" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center gap-4">
+
+          <!-- CART ICON -->
+          <a href="cart.html" class="position-relative text-dark text-decoration-none">
+            <iconify-icon icon="lucide:shopping-bag" class="fs-6"></iconify-icon>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count"
+              style="font-size:0.65rem;">
+              0
+            </span>
+          </a>
+
+          <!-- MENU BUTTON -->
+          <div class="btn-group">
+            <button
+              class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+              type="button"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="true"
+              aria-expanded="false">
+
+              <iconify-icon icon="solar:hamburger-menu-line-duotone"
+                class="menu-icon fs-8 text-dark"></iconify-icon>
+            </button>
+
+            <!-- DROPDOWN MENU -->
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown-menu dropdown-menu-end premium-menu p-0 overflow-hidden">
+
+              <div class="premium-menu-inner">
+
+                <!-- HEADER -->
+                <div class="menu-top d-flex justify-content-between align-items-center">
+                  <h6 class="mb-0 fw-bold">Navigation</h6>
+                  <button type="button" class="btn-close opacity-75"></button>
+                </div>
+
+
+                <!-- ======================
+                    PRIMARY ACTIONS
+                ======================= -->
+                <div class="menu-primary">
+
+                  <!-- MARKETPLACE (MAIN CTA) -->
+                  <a href="websites.html" class="menu-hero">
+                    <div class="d-flex align-items-center gap-3">
+                      <iconify-icon icon="lucide:globe" class="fs-4"></iconify-icon>
+                      <div>
+                        <div class="fw-bold">Marketplace</div>
+                        <small>Browse backlink websites</small>
+                      </div>
+                    </div>
+                    <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+                  </a>
+
+                  <!-- CART -->
+                  <a href="cart.html" class="menu-cart">
+                    <iconify-icon icon="lucide:shopping-bag"></iconify-icon>
+                    <span>Your Cart</span>
+                  </a>
+
+                </div>
+
+
+                <!-- EXPLORE -->
+                <div class="menu-section">
+                  <p class="menu-label">Explore</p>
+
+                  <a href="index.html" class="menu-link">
+                    <iconify-icon icon="lucide:home"></iconify-icon> Home
+                  </a>
+
+                  <a href="services.html" class="menu-link">
+                    <iconify-icon icon="lucide:briefcase"></iconify-icon> Services
+                  </a>
+
+                  <a href="projects.html" class="menu-link">
+                    <iconify-icon icon="lucide:folder-kanban"></iconify-icon> Projects
+                  </a>
+
+                  <!-- Hidden Future Page -->
+                  <!--
+                  <a href="blog.html" class="menu-link">
+                    <iconify-icon icon="lucide:pen-square"></iconify-icon> Blog
+                  </a>
+                  -->
+                </div>
+
+
+                <!-- COMPANY -->
+                <div class="menu-section">
+                  <p class="menu-label">Company</p>
+
+                  <a href="about-us.html" class="menu-link">
+                    <iconify-icon icon="lucide:info"></iconify-icon> About
+                  </a>
+
+                  <a href="contact.html" class="menu-link">
+                    <iconify-icon icon="lucide:mail"></iconify-icon> Contact
+                  </a>
+
+                  <!-- Hidden Future Page -->
+                  <!--
+                  <a href="docs.html" class="menu-link">
+                    <iconify-icon icon="lucide:file-text"></iconify-icon> Docs
+                  </a>
+                  -->
+                </div>
+
+
+                <!-- ACCOUNT CTA -->
+                <div class="menu-auth">
+                  <a href="sign-in.html" class="btn btn-light w-100">Sign In</a>
+                  <a href="sign-up.html" class="btn btn-dark w-100">Create Account</a>
+                </div>
+
+
+                <!-- FOOTER -->
+                <div class="menu-footer">
+                  <small>+1-212-456-7890</small>
+                  <strong>contact@bsmbacklinks.com</strong>
+                </div>
+
+              </div>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--  Page Wrapper -->
+  <div class="page-wrapper overflow-hidden bg-light-subtle pb-10">
+
+    <!-- Websites Header / Marketplace Hero -->
+    <section class="websites-hero text-center position-relative overflow-hidden"
+      style="padding-top:140px; padding-bottom: 60px; background: linear-gradient(135deg, rgba(238,242,246,1) 0%, rgba(255,255,255,1) 100%);">
+      <!-- Abstract Shapes -->
+      <div class="position-absolute top-0 start-0 translate-middle rounded-circle bg-primary opacity-10 blur-xl"
+        style="width: 400px; height: 400px; filter: blur(80px);"></div>
+      <div class="position-absolute bottom-0 end-0 rounded-circle bg-info opacity-10 blur-xl"
+        style="width: 300px; height: 300px; filter: blur(60px); transform: translate(30%, 30%);"></div>
+
+      <div class="container position-relative z-1">
+        <div class="websites-intro mx-auto" style="max-width: 800px;">
+          <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-3 fw-bold fs-8">Marketplace</span>
+          <h1 class="websites-title fw-bolder display-4 mb-4 text-dark" style="letter-spacing: -1px;">
+            Discover <span class="text-primary position-relative">High-Authority
+              <svg class="position-absolute bottom-0 start-0 w-100 text-primary"
+                style="height: 12px; margin-bottom: -4px;" viewBox="0 0 200 9" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.00032 6.5C36.667 2.16667 122.9 -3.8 198.5 6.5" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" />
+              </svg>
+            </span> Domains
+          </h1>
+          <p class="websites-subtitle fs-5 text-secondary mb-5">
+            Search and filter through 11,000+ curated backlink opportunities to boost your organic rankings instantly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marketplace Content -->
+    <section class="marketplace-content py-5">
+      <div class="container-fluid px-xl-5">
+
+        <!-- Unified Search & Filter Toolbar (All Screens) -->
+        <div class="row mb-5 justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <div
+              class="d-flex align-items-center justify-content-between gap-2 gap-sm-3 bg-white p-2 rounded-pill shadow-sm border">
+
+              <!-- Left: Filter Toggle -->
+              <button
+                class="btn btn-primary rounded-pill px-3 px-sm-4 py-2 fw-semibold border-0 d-flex align-items-center gap-2 flex-shrink-0"
+                type="button" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas"
+                aria-controls="filterOffcanvas">
+                <iconify-icon icon="lucide:sliders-horizontal"></iconify-icon> <span
+                  class="d-none d-sm-inline">Filters</span>
+              </button>
+
+              <!-- Center: Search -->
+              <div class="position-relative d-flex align-items-center flex-grow-1">
+                <iconify-icon icon="lucide:search" class="fs-5 text-muted ms-2 position-absolute"
+                  style="left: 0; pointer-events: none;"></iconify-icon>
+                <input type="text" id="searchInput"
+                  class="form-control border-0 shadow-none bg-transparent ps-5 py-2 fw-medium fs-6 filter-input"
+                  placeholder="Search domain...">
+              </div>
+
+              <!-- Right: Reset -->
+              <button
+                class="btn btn-light rounded-pill px-3 px-sm-4 py-2 fw-semibold border-0 d-flex align-items-center gap-2 flex-shrink-0 text-secondary hover-bg-light"
+                onclick="document.querySelectorAll('.filter-input').forEach(i => i.value=''); applyFilters();"
+                title="Reset Filters">
+                <iconify-icon icon="lucide:rotate-ccw"></iconify-icon> <span class="d-none d-sm-inline">Reset</span>
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-start gy-4">
+
+          <!-- FILTER SIDEBAR (Offcanvas for ALL screens) -->
+          <div class="offcanvas offcanvas-start border-0 shadow-sm" tabindex="-1" id="filterOffcanvas"
+            aria-labelledby="filterOffcanvasLabel">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title fw-bold d-flex align-items-center gap-2" id="filterOffcanvasLabel">
+                <iconify-icon icon="lucide:sliders-horizontal" class="text-primary"></iconify-icon> Filters
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body p-4">
+
+              <div class="filter-group mb-4">
+                <label class="form-label fs-7 fw-semibold text-dark">Category</label>
+                <select id="filterCategory"
+                  class="form-select form-select-sm border-light-subtle bg-light text-dark fw-medium filter-input shadow-none rounded-3">
+                  <option value="">All Categories</option>
+                </select>
+              </div>
+
+              <div class="filter-group mb-4">
+                <label class="form-label fs-7 fw-semibold text-dark">Traffic Region</label>
+                <select id="filterRegion"
+                  class="form-select form-select-sm border-light-subtle bg-light text-dark fw-medium filter-input shadow-none rounded-3">
+                  <option value="">All Regions</option>
+                </select>
+              </div>
+
+              <div class="filter-group mb-4">
+                <label class="form-label fs-7 fw-semibold text-dark">Domain Authority (DA)</label>
+                <div class="input-group input-group-sm border border-light-subtle rounded-3 overflow-hidden bg-light">
+                  <input type="number" id="filterMinDa"
+                    class="form-control border-0 bg-transparent shadow-none fw-medium filter-input text-center py-2"
+                    placeholder="Min">
+                  <span class="input-group-text bg-transparent border-0 text-muted px-1">-</span>
+                  <input type="number" id="filterMaxDa"
+                    class="form-control border-0 bg-transparent shadow-none fw-medium filter-input text-center py-2"
+                    placeholder="Max">
+                </div>
+              </div>
+
+              <div class="filter-group mb-4">
+                <label class="form-label fs-7 fw-semibold text-dark">Domain Rating (DR)</label>
+                <div class="input-group input-group-sm border border-light-subtle rounded-3 overflow-hidden bg-light">
+                  <input type="number" id="filterMinDr"
+                    class="form-control border-0 bg-transparent shadow-none fw-medium filter-input text-center py-2"
+                    placeholder="Min">
+                  <span class="input-group-text bg-transparent border-0 text-muted px-1">-</span>
+                  <input type="number" id="filterMaxDr"
+                    class="form-control border-0 bg-transparent shadow-none fw-medium filter-input text-center py-2"
+                    placeholder="Max">
+                </div>
+              </div>
+
+              <div class="filter-group mb-4">
+                <label class="form-label fs-7 fw-semibold text-dark">Traffic Limit</label>
+                <div class="input-group input-group-sm border border-light-subtle rounded-3 overflow-hidden bg-light">
+                  <input type="number" id="filterMinTraffic"
+                    class="form-control border-0 bg-transparent shadow-none fw-medium filter-input text-center py-2"
+                    placeholder="Min">
+                  <span class="input-group-text bg-transparent border-0 text-muted px-1">-</span>
+                  <input type="number" id="filterMaxTraffic"
+                    class="form-control border-0 bg-transparent shadow-none fw-medium filter-input text-center py-2"
+                    placeholder="Max">
+                </div>
+              </div>
+
+              <div class="filter-group mb-4">
+                <label class="form-label fs-7 fw-semibold text-dark">Price ($)</label>
+                <div class="input-group input-group-sm border border-light-subtle rounded-3 overflow-hidden bg-light">
+                  <input type="number" id="filterMinPrice"
+                    class="form-control border-0 bg-transparent shadow-none fw-medium filter-input text-center py-2"
+                    placeholder="Min">
+                  <span class="input-group-text bg-transparent border-0 text-muted px-1">-</span>
+                  <input type="number" id="filterMaxPrice"
+                    class="form-control border-0 bg-transparent shadow-none fw-medium filter-input text-center py-2"
+                    placeholder="Max">
+                </div>
+              </div>
+
+              <div class="mt-5">
+                <button class="btn btn-outline-secondary w-100 fw-semibold"
+                  onclick="document.querySelectorAll('.filter-input').forEach(i => i.value=''); applyFilters();"
+                  data-bs-dismiss="offcanvas">Reset Filters</button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- TABLE SECTION (Full Width) -->
+          <div class="col-12">
+
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+
+              <div id="tableLoader" class="text-center py-5 my-5">
+                <h5 class="mb-3 text-secondary fw-medium">Fetching the best inventory...</h5>
+                <div class="spinner-grow text-primary" role="status" style="width: 3rem; height: 3rem;">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+
+              <div class="table-responsive d-none bg-white custom-scrollbar pb-3" id="tableWrapper">
+                <table class="table table-hover align-middle mb-0 marketplace-table" id="websitesTable">
+                  <thead style="background-color: #f8f9fa;">
+                    <tr>
+                      <th class="text-start py-3 ps-4 text-secondary fw-bold text-uppercase fs-8 ls-1 border-bottom-0 rounded-top-start">Website</th>
+                      <th class="py-3 text-secondary fw-bold text-uppercase fs-8 ls-1 border-bottom-0 d-none d-lg-table-cell">DA <iconify-icon icon="lucide:info" class="text-muted" title="Domain Authority"></iconify-icon></th>
+                      <th class="py-3 text-secondary fw-bold text-uppercase fs-8 ls-1 border-bottom-0 d-none d-lg-table-cell">DR <iconify-icon icon="lucide:info" class="text-muted" title="Ahrefs Domain Rating"></iconify-icon></th>
+                      <th class="py-3 text-secondary fw-bold text-uppercase fs-8 ls-1 border-bottom-0 d-none d-lg-table-cell">TF</th>
+                      <th class="py-3 text-secondary fw-bold text-uppercase fs-8 ls-1 border-bottom-0 d-none d-lg-table-cell">Spam</th>
+                      <th class="py-3 text-secondary fw-bold text-uppercase fs-8 ls-1 border-bottom-0 d-none d-lg-table-cell">Traffic</th>
+                      <th class="py-3 text-secondary fw-bold text-uppercase fs-8 ls-1 border-bottom-0 d-none d-lg-table-cell">Category</th>
+                      <th class="py-3 text-secondary fw-bold text-uppercase fs-8 ls-1 border-bottom-0 d-none d-lg-table-cell">Dofollow</th>
+                      <th class="py-3 text-secondary fw-bold text-uppercase fs-8 ls-1 border-bottom-0 d-none d-lg-table-cell">Sponsored</th>
+                      <th class="py-3 text-secondary fw-bold text-uppercase fs-8 ls-1 border-bottom-0 d-none d-lg-table-cell">Indexing</th>
+                      <th class="py-3 text-center text-secondary fw-bold text-uppercase fs-8 ls-1 border-bottom-0 d-lg-none" style="width: 50px;">Info</th>
+                      <th class="py-3 pe-4 text-center text-secondary fw-bold text-uppercase fs-8 ls-1 border-bottom-0 rounded-top-end">Price & Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="websitesBody" class="border-top-0">
+                    <!-- DATA RENDERED BY MARKETPLACE.JS -->
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+
+            <!-- Pagination Container -->
+            <nav id="paginationControls" aria-label="Table navigation" class="mt-4 pb-5">
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer bg-dark py-5 py-lg-11 py-xl-12 position-relative">
+
+    <!-- background gradient -->
+    <div class="footer-gradient"></div>
+
+    <div class="container position-relative">
+      <div class="row gy-9 align-items-start">
+
+        <!-- BRAND SIDE -->
+        <div class="col-xl-5">
+
+          <div class="footer-brand">
+
+            <!-- CLICKABLE LOGO -->
+            <a href="#" class="footer-logo-link logo-hover" id="footerLogo">
+
+              <!-- white logo -->
+              <img src="../assets/images/logos/5-01.svg"
+                  class="logo-default"
+                  alt="BSM Backlinks">
+
+              <!-- blue logo -->
+              <img src="../assets/images/logos/6-01-blue.svg"
+                  class="logo-hover-img"
+                  alt="BSM Backlinks">
+
+            </a>
+
+            <h2 class="text-white mb-0 footer-heading">
+              Discover high-authority<br>
+              <span class="text-primary">backlink opportunities</span>
+            </h2>
+
+            <p class="text-white text-opacity-70 fs-5 mb-0">
+              Explore verified websites, compare metrics, and purchase placements
+              directly through the BSM Backlinks marketplace.
+            </p>
+
+            <div class="footer-contact-wrap">
+
+              <!-- Email -->
+              <a href="mailto:contact@bsmbacklinks.com"
+                class="footer-contact hstack gap-3 text-white">
+                <iconify-icon icon="lucide:mail" class="text-primary"></iconify-icon>
+                contact@bsmbacklinks.com
+              </a>
+
+              <!-- Marketplace CTA -->
+              <a href="websites.html"
+                class="footer-contact footer-cta hstack gap-3 text-white">
+                <iconify-icon icon="lucide:shopping-bag" class="text-primary"></iconify-icon>
+                Browse Marketplace
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- MARKETPLACE -->
+        <div class="col-6 col-md-4 col-xl-2">
+          <h6 class="footer-title text-white">Marketplace</h6>
+          <ul class="footer-menu list-unstyled mt-4">
+            <li><a href="websites.html">Browse Websites</a></li>
+            <li><a href="websites.html">All Niches</a></li>
+            <li><a href="websites.html">High Authority Sites</a></li>
+            <li><a href="cart.html">Your Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+
+        <!-- PLATFORM -->
+        <div class="col-6 col-md-4 col-xl-2">
+          <h6 class="footer-title text-white">Platform</h6>
+          <ul class="footer-menu list-unstyled mt-4">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-and-conditions.html">Terms</a></li>
+          </ul>
+        </div>
+
+        <!-- ACCOUNT + SOCIAL -->
+        <div class="col-md-4 col-xl-3 text-md-end">
+
+          <h6 class="footer-title text-white">Account</h6>
+
+          <ul class="footer-menu list-unstyled mt-4 mb-5 text-md-end">
+            <li><a href="sign-in.html">Sign In</a></li>
+            <li><a href="sign-up.html">Create Account</a></li>
+          </ul>
+
+          <h6 class="footer-title text-white">Follow Us</h6>
+
+          <div class="footer-social mt-4 d-flex gap-3 justify-content-md-end">
+            <a href="#" class="social-btn"><iconify-icon icon="mdi:linkedin"></iconify-icon></a>
+            <a href="#" class="social-btn"><iconify-icon icon="mdi:twitter"></iconify-icon></a>
+            <a href="#" class="social-btn"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
+          </div>
+
+          <p class="text-white text-opacity-50 mt-5 mb-0">
+            © 2026 BSM Backlinks. All rights reserved.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <div class="get-template hstack gap-2">
+    <button
+      class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0 shadow-lg border-0"
+      id="scrollToTopBtn" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 99;">
+      <iconify-icon icon="lucide:arrow-up" class="fs-5 text-white"></iconify-icon>
+    </button>
+  </div>
+
+
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="../assets/libs/aos-master/dist/aos.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <script src="../assets/js/marketplace.js"></script>
+  <!-- solar icons -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
+</body>
+
+</html>

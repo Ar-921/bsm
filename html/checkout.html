@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout - BSM Backlinks</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon_main-01.svg" />
+    <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/marketplace.css" />
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+
+<body class="bg-light-subtle d-flex flex-column min-vh-100">
+
+    <!-- FINAL UNIVERSAL HEADER -->
+    <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
+    <div class="container">
+        <div class="header-wrapper d-flex align-items-center justify-content-between">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="index.html" class="logo-white">
+            <img src="../assets/images/logos/6-01.svg" alt="logo" class="img-fluid">
+            </a>
+            <a href="index.html" class="logo-dark">
+            <img src="../assets/images/logos/6-01.svg" alt="logo" class="img-fluid">
+            </a>
+        </div>
+
+        <div class="d-flex align-items-center gap-4">
+
+            <!-- CART ICON -->
+            <a href="cart.html" class="position-relative text-dark text-decoration-none">
+            <iconify-icon icon="lucide:shopping-bag" class="fs-6"></iconify-icon>
+            <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count"
+                style="font-size:0.65rem;">
+                0
+            </span>
+            </a>
+
+            <!-- MENU BUTTON -->
+            <div class="btn-group">
+            <button
+                class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
+                type="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="true"
+                aria-expanded="false">
+
+                <iconify-icon icon="solar:hamburger-menu-line-duotone"
+                class="menu-icon fs-8 text-dark"></iconify-icon>
+            </button>
+
+            <!-- DROPDOWN MENU -->
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown-menu dropdown-menu-end premium-menu p-0 overflow-hidden">
+
+                <div class="premium-menu-inner">
+
+                <!-- HEADER -->
+                <div class="menu-top d-flex justify-content-between align-items-center">
+                    <h6 class="mb-0 fw-bold">Navigation</h6>
+                    <button type="button" class="btn-close opacity-75"></button>
+                </div>
+
+
+                <!-- ======================
+                    PRIMARY ACTIONS
+                ======================= -->
+                <div class="menu-primary">
+
+                    <!-- MARKETPLACE (MAIN CTA) -->
+                    <a href="websites.html" class="menu-hero">
+                    <div class="d-flex align-items-center gap-3">
+                        <iconify-icon icon="lucide:globe" class="fs-4"></iconify-icon>
+                        <div>
+                        <div class="fw-bold">Marketplace</div>
+                        <small>Browse backlink websites</small>
+                        </div>
+                    </div>
+                    <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+                    </a>
+
+                    <!-- CART -->
+                    <a href="cart.html" class="menu-cart">
+                    <iconify-icon icon="lucide:shopping-bag"></iconify-icon>
+                    <span>Your Cart</span>
+                    </a>
+
+                </div>
+
+
+                <!-- EXPLORE -->
+                <div class="menu-section">
+                    <p class="menu-label">Explore</p>
+
+                    <a href="index.html" class="menu-link">
+                    <iconify-icon icon="lucide:home"></iconify-icon> Home
+                    </a>
+
+                    <a href="services.html" class="menu-link">
+                    <iconify-icon icon="lucide:briefcase"></iconify-icon> Services
+                    </a>
+
+                    <a href="projects.html" class="menu-link">
+                    <iconify-icon icon="lucide:folder-kanban"></iconify-icon> Projects
+                    </a>
+
+                    <!-- Hidden Future Page -->
+                    <!--
+                    <a href="blog.html" class="menu-link">
+                    <iconify-icon icon="lucide:pen-square"></iconify-icon> Blog
+                    </a>
+                    -->
+                </div>
+
+
+                <!-- COMPANY -->
+                <div class="menu-section">
+                    <p class="menu-label">Company</p>
+
+                    <a href="about-us.html" class="menu-link">
+                    <iconify-icon icon="lucide:info"></iconify-icon> About
+                    </a>
+
+                    <a href="contact.html" class="menu-link">
+                    <iconify-icon icon="lucide:mail"></iconify-icon> Contact
+                    </a>
+
+                    <!-- Hidden Future Page -->
+                    <!--
+                    <a href="docs.html" class="menu-link">
+                    <iconify-icon icon="lucide:file-text"></iconify-icon> Docs
+                    </a>
+                    -->
+                </div>
+
+
+                <!-- ACCOUNT CTA -->
+                <div class="menu-auth">
+                    <a href="sign-in.html" class="btn btn-light w-100">Sign In</a>
+                    <a href="sign-up.html" class="btn btn-dark w-100">Create Account</a>
+                </div>
+
+
+                <!-- FOOTER -->
+                <div class="menu-footer">
+                    <small>+1-212-456-7890</small>
+                    <strong>contact@bsmbacklinks.com</strong>
+                </div>
+
+                </div>
+            </ul>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    </header>
+
+    <!-- Main Checkout Section -->
+    <main class="flex-grow-1" style="padding-top: 200px; padding-bottom: 60px;">
+        <div class="container">
+
+            <div class="row gy-5">
+                <!-- Order Form -->
+                <div class="col-lg-7 pe-lg-5">
+                    <h3 class="fw-bolder mb-4 text-dark display-6">Checkout</h3>
+
+                    <form id="checkoutForm" onsubmit="event.preventDefault(); placeOrder();">
+
+                        <!-- Contact Info -->
+                        <div class="card border-0 shadow-sm rounded-4 mb-4">
+                            <div class="card-body p-4 p-md-5">
+                                <h5 class="fw-bold mb-4 d-flex align-items-center gap-2">
+                                    <span
+                                        class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 28px; height: 28px; font-size: 14px;">1</span>
+                                    Contact Information
+                                </h5>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label fs-7 fw-semibold text-secondary">First Name</label>
+                                        <input type="text"
+                                            class="form-control bg-light border-light-subtle shadow-none py-2 px-3 rounded-3"
+                                            placeholder="John" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fs-7 fw-semibold text-secondary">Last Name</label>
+                                        <input type="text"
+                                            class="form-control bg-light border-light-subtle shadow-none py-2 px-3 rounded-3"
+                                            placeholder="Doe" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label fs-7 fw-semibold text-secondary">Email Address</label>
+                                        <input type="email"
+                                            class="form-control bg-light border-light-subtle shadow-none py-2 px-3 rounded-3"
+                                            placeholder="john@company.com" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Info -->
+                        <div class="card border-0 shadow-sm rounded-4 mb-4">
+                            <div class="card-body p-4 p-md-5">
+                                <h5 class="fw-bold mb-4 d-flex align-items-center gap-2">
+                                    <span
+                                        class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 28px; height: 28px; font-size: 14px;">2</span>
+                                    Payment Details
+                                </h5>
+
+                                <div class="p-3 bg-light border rounded-3 text-center text-secondary mb-4">
+                                    <iconify-icon icon="logos:paypal" class="fs-1"></iconify-icon>
+                                    <p class="mb-0 mt-2 fs-7 fw-medium">You will be redirected to PayPal to complete
+                                        your purchase securely.</p>
+                                </div>
+
+                                <div class="form-check fs-7 text-secondary mt-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="termsCheck" required>
+                                    <label class="form-check-label" for="termsCheck">
+                                        I agree to the <a href="#" class="text-primary text-decoration-none">Terms and
+                                            Conditions</a> and <a href="#"
+                                            class="text-primary text-decoration-none">Privacy Policy</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit"
+                            class="btn btn-primary w-100 py-3 rounded-pill fw-bold fs-5 shadow hover-lift transition-all">
+                            Pay with PayPal <iconify-icon icon="lucide:arrow-right"
+                                class="ms-2 align-middle"></iconify-icon>
+                        </button>
+
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-lg rounded-4 bg-dark text-white overflow-hidden"
+                        style="top: 100px;">
+                        <!-- background glow effect -->
+                        <div class="position-absolute top-0 end-0 rounded-circle bg-primary opacity-25 blur-xl"
+                            style="width: 200px; height: 200px; filter: blur(50px);"></div>
+
+                        <div class="card-body p-4 p-md-5 position-relative z-1">
+                            <h4 class="fw-bold mb-4 text-white">Order Summary</h4>
+
+                            <div class="order-items-scroll custom-scrollbar"
+                                style="max-height: 300px; overflow-y: auto; padding-right: 10px;">
+                                <div id="checkoutItemsContainer" class="d-flex flex-column gap-3">
+                                    <!-- Order items injected by JS -->
+                                </div>
+                            </div>
+
+                            <hr class="border-secondary opacity-25 my-4">
+
+                            <div class="d-flex justify-content-between mb-3 text-white text-opacity-75">
+                                <span>Subtotal</span>
+                                <span class="fw-medium text-white" id="checkoutSubtotal">$0.00</span>
+                            </div>
+                            <div
+                                class="d-flex justify-content-between mb-4 pb-4 border-bottom border-light border-opacity-10 text-white text-opacity-75">
+                                <span>Platform Fee</span>
+                                <span class="fw-medium text-white" id="checkoutFee">$0.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold fs-5 text-white">Total due</span>
+                                <span class="fw-bold display-6 text-white" id="checkoutTotal">$0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-dark py-4 text-center mt-auto border-top border-secondary border-opacity-25">
+        <p class="text-white text-opacity-50 mb-0 fs-8">© 2026 BSM Backlinks. All rights reserved.</p>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4 p-4 text-center">
+                <div class="modal-body py-4">
+                    <div class="mx-auto rounded-circle bg-success bg-opacity-10 d-flex align-items-center justify-content-center mb-4"
+                        style="width: 80px; height: 80px;">
+                        <iconify-icon icon="lucide:check-circle-2" class="text-success display-4"></iconify-icon>
+                    </div>
+                    <h3 class="fw-bold mb-3">Order Placed!</h3>
+                    <p class="text-secondary mb-4">Thank you for your purchase. We have received your order and will
+                        begin processing your backlink placements shortly.</p>
+                    <button type="button" class="btn btn-primary px-5 py-2 rounded-pill fw-bold"
+                        onclick="finishOrder()">Return to Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/marketplace.js"></script>
+
+    <script>
+        function renderCheckoutData() {
+            const container = document.getElementById("checkoutItemsContainer");
+            const subtotalEl = document.getElementById("checkoutSubtotal");
+            const feeEl = document.getElementById("checkoutFee");
+            const totalEl = document.getElementById("checkoutTotal");
+
+            if (!container) return;
+
+            if (cart.length === 0) {
+                container.innerHTML = `<p class="text-white text-opacity-50 fst-italic mb-0">No items to checkout.</p>`;
+                document.querySelector('#checkoutForm button[type="submit"]').disabled = true;
+                return;
+            }
+
+            container.innerHTML = "";
+            let subtotal = 0;
+
+            cart.forEach(item => {
+                subtotal += parseFloat(item.price);
+
+                const row = `
+                <div class="d-flex align-items-center justify-content-between p-3 rounded-3 bg-white bg-opacity-10 border border-white border-opacity-10">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                            <iconify-icon icon="lucide:link-2" class="fs-4 text-primary text-opacity-75"></iconify-icon>
+                        </div>
+                        <div>
+                            <h6 class="mb-0 text-white fw-bold fs-7">${item.domain}</h6>
+                            <span class="text-white text-opacity-50 fs-8">Guest Post</span>
+                        </div>
+                    </div>
+                    <span class="fw-bold text-white">$${parseFloat(item.price).toFixed(2)}</span>
+                </div>
+            `;
+                container.insertAdjacentHTML("beforeend", row);
+            });
+
+            const fee = subtotal * 0.02;
+            const total = subtotal + fee;
+
+            subtotalEl.innerText = `$${subtotal.toFixed(2)}`;
+            feeEl.innerText = `$${fee.toFixed(2)}`;
+            totalEl.innerText = `$${total.toFixed(2)}`;
+        }
+
+        function placeOrder() {
+            if (cart.length === 0) return;
+
+            // Mock API call simulation
+            const btn = document.querySelector('#checkoutForm button[type="submit"]');
+            btn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Processing...`;
+            btn.disabled = true;
+
+            setTimeout(() => {
+                const modal = new bootstrap.Modal(document.getElementById('successModal'));
+                modal.show();
+            }, 1500);
+        }
+
+        function finishOrder() {
+            // Clear cart
+            cart = [];
+            localStorage.setItem("bsm_cart", JSON.stringify(cart));
+            window.location.href = "index.html";
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            renderCheckoutData();
+        });
+    </script>
+</body>
+
+</html>
