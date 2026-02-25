@@ -1,0 +1,257 @@
+/* =========================================
+   MARKETPLACE PREMIUM STYLES
+========================================= */
+
+/* Typography & General */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for modern look */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(63, 125, 190, 0.3);
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(63, 125, 190, 0.6);
+}
+
+/* Marketplace Table Enhancements */
+.marketplace-table {
+    border-spacing: 0;
+    margin-bottom: 0;
+}
+
+.marketplace-table tr {
+    transition: all 0.2s ease-in-out;
+}
+
+.marketplace-table tbody tr:hover {
+    background-color: #f8fbff;
+    box-shadow: inset 3px 0 0 var(--bs-primary);
+}
+
+.marketplace-table th {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.marketplace-table td {
+    vertical-align: middle;
+    padding: 1rem 0.5rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #eef2f5;
+}
+
+/* Badges & Accents */
+.badge-metric {
+    display: inline-block;
+    min-width: 40px;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    color: #212529 !important;
+    border: 1px solid #ced4da;
+    font-weight: 700;
+    padding: 4px 8px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.traffic-badge {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border: 1px solid #bae6fd;
+}
+
+.category-badge {
+    background: #fdf4ff;
+    color: #86198f;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1px solid #f5d0fe;
+}
+
+.site-link {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.site-link:hover {
+    text-decoration: underline !important;
+}
+
+/* Tablet & Mobile Table Responsive Sticky Columns */
+.table-responsive {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Sticky Left: Website */
+.marketplace-table th:first-child,
+.marketplace-table td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: inset -2px 0 0px #eef2f5;
+}
+
+.marketplace-table thead th:first-child {
+    z-index: 3;
+    background-color: #f8f9fa;
+}
+
+.marketplace-table tbody tr:hover td:first-child {
+    background-color: #f8fbff;
+}
+
+/* Sticky Right: Merged Price & Actions */
+.marketplace-table th:last-child,
+.marketplace-table td:last-child {
+    position: sticky;
+    right: 0;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: inset 2px 0 0px #eef2f5;
+}
+
+.marketplace-table thead th:last-child {
+    z-index: 3;
+    background-color: #f8f9fa;
+}
+
+.marketplace-table tbody tr:hover td:last-child {
+    background-color: #f8fbff;
+}
+
+/* Filters */
+.filter-input {
+    transition: all 0.2s;
+}
+
+.filter-input:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 3px rgba(63, 125, 190, 0.15);
+}
+
+/* Force filter inputs to have light backgrounds with dark text for contrast */
+.filter-group input,
+.filter-group select {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+}
+
+.filter-group input::placeholder {
+    color: #6c757d !important;
+}
+
+/* Offcanvas custom tweaks */
+.offcanvas-lg {
+    max-width: 320px;
+}
+
+/* Hover Utils */
+.hover-lift {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.hover-bg-primary:hover {
+    background-color: var(--bs-primary) !important;
+}
+
+.hover-text-white:hover {
+    color: #fff !important;
+}
+
+.hover-bg-danger:hover {
+    background-color: var(--bs-danger) !important;
+}
+
+.hover-white:hover {
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+/* Pagination Adjustments */
+.pagination .page-item .page-link {
+    border-radius: 8px;
+    margin: 0 3px;
+    color: var(--bs-dark);
+    font-weight: 600;
+    border: none;
+    background: #f4f8fa;
+    transition: all 0.2s;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--bs-primary);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(63, 125, 190, 0.3);
+}
+
+.pagination .page-item .page-link:hover:not(.disabled) {
+    background-color: var(--bs-primary-border-subtle);
+}
+
+/* Toast Animations */
+#toastContainer .toast {
+    animation: slideUpFade 0.3s ease-out forwards;
+}
+
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Table Fade in */
+.fade-in {
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
